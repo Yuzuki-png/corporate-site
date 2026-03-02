@@ -1,25 +1,21 @@
-import Header from "@/components/Header";
-import Hero from "@/components/Hero";
-import Services from "@/components/Services";
-import About from "@/components/About";
-import Works from "@/components/Works";
-import Testimonials from "@/components/Testimonials";
-import Contact from "@/components/Contact";
-import Footer from "@/components/Footer";
+import Hero from "@/components/top/Hero";
+import AISection from "@/components/top/AISection";
+import DXSection from "@/components/top/DXSection";
+import SaaSSection from "@/components/top/SaaSSection";
+import APISection from "@/components/top/APISection";
+import PlatformSection from "@/components/top/PlatformSection";
+import CTASection from "@/components/common/CTASection";
 
 export default function Home() {
   return (
     <>
-      <Header />
-      <main>
-        <Hero />
-        <Services />
-        <About />
-        <Works />
-        <Testimonials />
-        <Contact />
-      </main>
-      <Footer />
+      <Hero />
+      <AISection />
+      <DXSection />
+      <SaaSSection />
+      <APISection />
+      <PlatformSection />
+      <CTASection />
     </>
   );
 }

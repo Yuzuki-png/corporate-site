@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
+import Header from "@/components/common/Header";
+import Footer from "@/components/common/Footer";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -13,22 +15,26 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "NexTech Solutions | テクノロジーで未来を創る",
+  title: {
+    default: "Linkvia | AIとDXで、業界の在庫をつなぐ",
+    template: "%s | Linkvia",
+  },
   description:
-    "NexTech Solutionsは、最先端のテクノロジーでビジネスの成長を加速させるITソリューション企業です。Web開発、クラウドインフラ、AI導入支援を提供します。",
+    "AI導入支援、DXコンサルティング、在庫管理/予約管理SaaS開発。レンタカー・レンタル・観光業界のDXを支援するテクノロジー企業。",
   keywords: [
-    "IT企業",
-    "Web開発",
-    "クラウド",
-    "AI",
+    "AI導入",
     "DX",
-    "システム開発",
-    "テクノロジー",
+    "レンタカーDX",
+    "在庫管理",
+    "予約管理",
+    "SaaS",
+    "業務効率化",
+    "レンタル管理",
   ],
   openGraph: {
-    title: "NexTech Solutions | テクノロジーで未来を創る",
+    title: "Linkvia | AIとDXで、業界の在庫をつなぐ",
     description:
-      "最先端のテクノロジーでビジネスの成長を加速させるITソリューション企業",
+      "AI導入支援、DXコンサルティング、在庫管理/予約管理SaaS開発。レンタカー・レンタル・観光業界のDXを支援。",
     type: "website",
     locale: "ja_JP",
   },
@@ -44,7 +50,9 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        {children}
+        <Header />
+        <main>{children}</main>
+        <Footer />
       </body>
     </html>
   );

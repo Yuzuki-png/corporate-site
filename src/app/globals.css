@@ -2,18 +2,18 @@
 
 :root {
   --background: #ffffff;
-  --foreground: #0a0a0a;
+  --foreground: #111827;
   --primary: #2563eb;
   --primary-light: #3b82f6;
-  --primary-dark: #1d4ed8;
-  --accent: #06b6d4;
-  --muted: #f1f5f9;
+  --primary-dark: #1e40af;
+  --accent: #1e3a5f;
+  --muted: #f8fafc;
   --muted-foreground: #64748b;
   --border: #e2e8f0;
   --card: #ffffff;
-  --card-foreground: #0a0a0a;
+  --card-foreground: #111827;
   --gradient-start: #2563eb;
-  --gradient-end: #06b6d4;
+  --gradient-end: #1e3a5f;
 }
 
 @theme inline {
@@ -32,22 +32,6 @@
   --font-mono: var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #030712;
-    --foreground: #f8fafc;
-    --primary: #3b82f6;
-    --primary-light: #60a5fa;
-    --primary-dark: #2563eb;
-    --accent: #22d3ee;
-    --muted: #1e293b;
-    --muted-foreground: #94a3b8;
-    --border: #1e293b;
-    --card: #0f172a;
-    --card-foreground: #f8fafc;
-  }
-}
-
 body {
   background: var(--background);
   color: var(--foreground);
@@ -59,61 +43,37 @@ html {
 }
 
 .gradient-text {
-  background: linear-gradient(135deg, var(--gradient-start), var(--gradient-end));
+  background: linear-gradient(
+    135deg,
+    var(--gradient-start),
+    var(--gradient-end)
+  );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
 }
 
-.glass {
-  background: rgba(255, 255, 255, 0.05);
-  backdrop-filter: blur(12px);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-}
-
 .hero-gradient {
-  background: radial-gradient(
-      ellipse 80% 60% at 50% -20%,
-      rgba(37, 99, 235, 0.15),
+  background:
+    radial-gradient(
+      ellipse 80% 50% at 50% -20%,
+      rgba(37, 99, 235, 0.08),
       transparent
     ),
     radial-gradient(
       ellipse 60% 40% at 80% 50%,
-      rgba(6, 182, 212, 0.1),
+      rgba(30, 58, 95, 0.04),
       transparent
     );
 }
 
-@media (prefers-color-scheme: dark) {
-  .hero-gradient {
-    background: radial-gradient(
-        ellipse 80% 60% at 50% -20%,
-        rgba(37, 99, 235, 0.25),
-        transparent
-      ),
-      radial-gradient(
-        ellipse 60% 40% at 80% 50%,
-        rgba(6, 182, 212, 0.15),
-        transparent
-      );
-  }
-}
-
 .grid-pattern {
-  background-image: linear-gradient(
-      rgba(0, 0, 0, 0.03) 1px,
-      transparent 1px
-    ),
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.03) 1px, transparent 1px),
     linear-gradient(90deg, rgba(0, 0, 0, 0.03) 1px, transparent 1px);
   background-size: 60px 60px;
 }
 
-@media (prefers-color-scheme: dark) {
-  .grid-pattern {
-    background-image: linear-gradient(
-        rgba(255, 255, 255, 0.03) 1px,
-        transparent 1px
-      ),
-      linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
-  }
+.section-alt {
+  background: var(--muted);
 }
