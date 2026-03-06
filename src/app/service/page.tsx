@@ -7,7 +7,7 @@ import Container from "@/components/common/Container";
 export const metadata: Metadata = {
   title: "サービス一覧",
   description:
-    "AIとDXの力で業務課題を解決する8つのサービス。AI導入支援、DXコンサルティング、在庫管理システム、SaaS開発など。",
+    "レンタカー在庫管理DX、在庫API、OTA接続、MaaS連携、AI価格最適化など、レンタカー業界向けサービス。",
 };
 
 export default function ServicePage() {
@@ -16,7 +16,7 @@ export default function ServicePage() {
       <PageHero
         englishTitle="Service"
         japaneseTitle="サービス一覧"
-        description="AIとDXの力で、業務課題を解決する8つのサービスを提供しています。"
+        description="レンタカー会社向けDXと、接続先向けAPIの両面からサービスを提供しています。"
       />
       <section className="py-24 sm:py-32">
         <Container>

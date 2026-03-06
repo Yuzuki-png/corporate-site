@@ -1,73 +1,73 @@
 "use client";
 
 import {
-  Brain,
-  BarChart3,
-  Code,
-  Package,
-  Calendar,
-  Cloud,
+  Database,
+  Globe,
+  CalendarCheck,
+  TrendingUp,
   Plug,
-  Layers,
+  Zap,
+  Navigation,
+  Brain,
 } from "lucide-react";
 import ServiceCard from "./ServiceCard";
 
 const services = [
   {
-    icon: Brain,
-    title: "AI導入支援",
+    icon: Database,
+    title: "在庫管理DX",
     description:
-      "生成AI、画像認識、需要予測など、最新のAI技術を御社の業務に実装。PoCから本番導入まで一貫して支援します。",
-    tags: ["生成AI", "画像認識", "需要予測"],
+      "レンタカーの在庫状況をリアルタイムでデジタル管理。紙やExcelベースの管理から脱却し、全拠点の車両在庫を一元化します。",
+    tags: ["リアルタイム", "マルチ拠点", "車両管理"],
   },
   {
-    icon: BarChart3,
-    title: "DXコンサルティング",
+    icon: Globe,
+    title: "OTA接続",
     description:
-      "業務フローの可視化から改善提案、ツール選定、導入支援まで。現場に寄り添ったDX推進をサポートします。",
-    tags: ["業務分析", "ロードマップ策定", "導入支援"],
+      "楽天トラベル、じゃらん等のOTAと在庫を自動連携。販路拡大と在庫の一元管理を同時に実現し、ダブルブッキングを防止します。",
+    tags: ["楽天トラベル", "じゃらん", "在庫同期"],
   },
   {
-    icon: Code,
-    title: "業務システム開発",
+    icon: CalendarCheck,
+    title: "予約管理",
     description:
-      "御社の業務に最適化されたWebシステムをスクラッチ開発。既存ツールでは対応できない業務課題を解決します。",
-    tags: ["Webアプリ", "管理画面", "ワークフロー"],
+      "オンライン予約から貸出・返却まで一気通貫で管理。24時間Web予約で機会損失を防ぎ、業務効率を向上させます。",
+    tags: ["オンライン予約", "貸出管理", "返却管理"],
   },
   {
-    icon: Package,
-    title: "在庫管理システム",
+    icon: TrendingUp,
+    title: "稼働率最適化",
     description:
-      "リアルタイム在庫管理、マルチ拠点対応、バーコード/QR対応。レンタル業界の在庫管理に特化したシステムを提供します。",
-    tags: ["リアルタイム", "マルチ拠点", "バーコード対応"],
-  },
-  {
-    icon: Calendar,
-    title: "予約管理システム",
-    description:
-      "オンライン予約、空き状況管理、自動メール通知。予約業務の完全デジタル化で、機会損失を防ぎます。",
-    tags: ["オンライン予約", "空き管理", "自動通知"],
-  },
-  {
-    icon: Cloud,
-    title: "SaaS開発",
-    description:
-      "マルチテナント対応のSaaS製品を企画・開発。サブスクリプション課金、ユーザー管理、データ分析機能を標準装備。",
-    tags: ["マルチテナント", "サブスクリプション", "スケーラブル"],
+      "データに基づく需要予測と在庫配置の最適化で、車両の稼働率と収益を最大化します。",
+    tags: ["需要予測", "稼働率分析", "収益最大化"],
   },
   {
     icon: Plug,
-    title: "API開発",
+    title: "レンタカー在庫API",
     description:
-      "RESTful API、GraphQL、Webhookなど、御社のシステムに最適なAPIを設計・開発。外部連携の基盤を構築します。",
-    tags: ["REST API", "GraphQL", "Webhook"],
+      "リアルタイムの車両在庫・料金データをAPIで提供。旅行アプリやMaaSプラットフォームに検索・予約機能を組み込めます。",
+    tags: ["REST API", "リアルタイム", "在庫データ"],
   },
   {
-    icon: Layers,
-    title: "システム統合",
+    icon: Zap,
+    title: "即時予約API",
     description:
-      "既存の基幹システム、会計ソフト、外部サービスをAPIで統合。データのサイロ化を解消し、業務全体を最適化します。",
-    tags: ["データ統合", "レガシー連携", "自動化"],
+      "API経由で空車確認から予約確定までリアルタイムで完結。接続先のユーザーに即座に予約完了を提供できます。",
+    tags: ["即時確認", "予約確定", "リアルタイム"],
+  },
+  {
+    icon: Navigation,
+    title: "MaaS連携",
+    description:
+      "MaaSアプリやモビリティサービスにレンタカーを統合。移動手段のひとつとしてシームレスに提供できます。",
+    tags: ["MaaS", "モビリティ", "統合"],
+  },
+  {
+    icon: Brain,
+    title: "AI価格最適化",
+    description:
+      "需要予測AIが季節・曜日・イベント等を分析し、最適な料金をリアルタイムで算出。稼働率と収益を最大化します。",
+    tags: ["AI", "ダイナミックプライシング", "需要予測"],
   },
 ];
 

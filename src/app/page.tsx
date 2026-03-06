@@ -2,7 +2,6 @@ import Hero from "@/components/top/Hero";
 import AISection from "@/components/top/AISection";
 import DXSection from "@/components/top/DXSection";
 import SaaSSection from "@/components/top/SaaSSection";
-import APISection from "@/components/top/APISection";
 import PlatformSection from "@/components/top/PlatformSection";
 import CTASection from "@/components/common/CTASection";
 
@@ -13,7 +12,6 @@ export default function Home() {
       <AISection />
       <DXSection />
       <SaaSSection />
-      <APISection />
       <PlatformSection />
       <CTASection />
     </>
