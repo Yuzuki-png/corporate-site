@@ -34,9 +34,9 @@ export default function Hero() {
           transition={{ duration: 0.6, delay: 0.2 }}
           className="mt-6 max-w-2xl text-center text-lg leading-relaxed text-muted-foreground sm:text-xl"
         >
-          AIとデータ活用で、Excelや紙に頼っていた
+          在庫・予約・稼働率の管理から、他業種・他サービスとの接続まで。
           <br className="hidden sm:block" />
-          在庫・予約・稼働率の管理をまるごとDXします
+          AIとデータ活用でレンタル事業をまるごとDXします
         </motion.p>
 
         <motion.div
