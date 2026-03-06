@@ -1,36 +1,28 @@
 "use client";
 
-import { Search, Map, Settings, RefreshCw } from "lucide-react";
+import { Plug, Zap, Navigation } from "lucide-react";
 import Container from "@/components/common/Container";
 import SectionHeader from "@/components/common/SectionHeader";
 import FadeInView from "@/components/common/FadeInView";
 
-const steps = [
+const features = [
   {
-    icon: Search,
-    step: "01",
-    title: "業務分析",
-    description: "現場ヒアリングと業務フロー可視化で、真の課題を特定します。",
-  },
-  {
-    icon: Map,
-    step: "02",
-    title: "戦略策定",
+    icon: Plug,
+    title: "レンタカー在庫API",
     description:
-      "費用対効果の高いDXロードマップを策定。優先順位を明確にします。",
+      "リアルタイムの車両在庫・料金データをAPIで取得。自社サービスにレンタカー検索・予約機能を簡単に組み込めます。",
   },
   {
-    icon: Settings,
-    step: "03",
-    title: "システム導入",
+    icon: Zap,
+    title: "即時予約",
     description:
-      "段階的にデジタルツールを導入。現場に無理のない移行を実現します。",
+      "API経由で空車確認から予約確定までをリアルタイムで完結。ユーザーに即座に予約完了を提供できます。",
   },
   {
-    icon: RefreshCw,
-    step: "04",
-    title: "運用・改善",
-    description: "導入後も継続的に効果測定と改善を繰り返し、定着を支援します。",
+    icon: Navigation,
+    title: "MaaS連携",
+    description:
+      "MaaSアプリやモビリティサービスにレンタカーを統合。移動手段のひとつとしてシームレスに提供できます。",
   },
 ];
 
@@ -39,25 +31,22 @@ export default function DXSection() {
     <section className="section-alt py-24 sm:py-32">
       <Container>
         <SectionHeader
-          englishLabel="DX Consulting"
-          title="紙とExcelから卒業する"
-          highlightedText="卒業"
-          description="現場のリアルな課題を深く理解し、最適なデジタル化の道筋を描きます。段階的な導入で、確実にDXを実現。"
+          englishLabel="For Partners"
+          title="接続先向け"
+          highlightedText="接続先"
+          description="旅行アプリ、MaaSプラットフォーム、OTAなど、レンタカー在庫を活用したいパートナー向けのAPI接続を提供します。"
         />
 
-        <div className="mt-16 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
-          {steps.map((item, i) => (
-            <FadeInView key={item.title} delay={i * 0.1}>
-              <div className="relative rounded-2xl border border-border bg-white p-8">
-                <span className="text-4xl font-extrabold text-primary/10">
-                  {item.step}
-                </span>
-                <div className="mt-3 flex h-10 w-10 items-center justify-center rounded-lg bg-primary/5 text-primary">
-                  <item.icon size={20} />
+        <div className="mt-16 grid gap-6 sm:grid-cols-3">
+          {features.map((feature, i) => (
+            <FadeInView key={feature.title} delay={i * 0.1}>
+              <div className="group rounded-2xl border border-border bg-white p-8 transition-all hover:border-primary/30 hover:shadow-lg hover:shadow-primary/5">
+                <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-primary/5 text-primary transition-colors group-hover:bg-primary group-hover:text-white">
+                  <feature.icon size={24} />
                 </div>
-                <h3 className="mt-4 text-base font-bold">{item.title}</h3>
-                <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
-                  {item.description}
+                <h3 className="mt-5 text-lg font-bold">{feature.title}</h3>
+                <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+                  {feature.description}
                 </p>
               </div>
             </FadeInView>

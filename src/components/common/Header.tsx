@@ -10,7 +10,6 @@ const navLinks = [
   { label: "サービス", href: "/service" },
   { label: "ソリューション", href: "/solutions" },
   { label: "会社概要", href: "/company" },
-  { label: "お問い合わせ", href: "/contact" },
 ];
 
 export default function Header() {
@@ -65,7 +64,7 @@ export default function Header() {
               href="/contact"
               className="ml-4 rounded-full bg-foreground px-5 py-2.5 text-sm font-semibold text-white transition-opacity hover:opacity-80"
             >
-              無料相談
+              お問い合わせ
             </Link>
           </nav>
 
@@ -105,7 +104,7 @@ export default function Header() {
                 href="/contact"
                 className="mt-2 rounded-full bg-foreground px-5 py-3 text-center text-base font-semibold text-white"
               >
-                無料相談
+                お問い合わせ
               </Link>
             </nav>
           </motion.div>

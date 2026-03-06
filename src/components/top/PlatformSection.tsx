@@ -6,22 +6,21 @@ import SectionHeader from "@/components/common/SectionHeader";
 import FadeInView from "@/components/common/FadeInView";
 
 const visionSteps = [
-  { label: "業務DX", description: "紙・Excel業務のデジタル化" },
-  { label: "SaaS化", description: "クラウドベースのサービス化" },
-  { label: "在庫統合", description: "複数拠点の在庫を一元化" },
-  { label: "API連携", description: "外部システムとの接続" },
-  { label: "業界接続", description: "事業者間プラットフォーム" },
+  { label: "レンタカーDX", description: "在庫管理のデジタル化" },
+  { label: "在庫API", description: "リアルタイム在庫を外部配信" },
+  { label: "OTA・MaaS接続", description: "旅行・モビリティと連携" },
+  { label: "レンタル在庫OS", description: "あらゆるレンタル在庫を統合" },
 ];
 
 export default function PlatformSection() {
   return (
-    <section className="py-24 sm:py-32">
+    <section className="section-alt py-24 sm:py-32">
       <Container>
         <SectionHeader
-          englishLabel="Platform Vision"
-          title="業界をつなぐプラットフォームへ"
+          englishLabel="Vision"
+          title="レンタル在庫プラットフォームへ"
           highlightedText="プラットフォーム"
-          description="個社のDXにとどまらず、業界全体をつなぐプラットフォームの構築を目指しています。在庫の共有、事業者間連携で、業界全体の効率化を実現します。"
+          description="レンタカーから始まり、すべてのレンタル在庫をデジタル化することを目指しています。"
         />
 
         <FadeInView className="mt-16">
@@ -42,7 +41,7 @@ export default function PlatformSection() {
                     {String(i + 1).padStart(2, "0")}
                   </div>
                   <h4 className="mt-3 text-sm font-bold">{step.label}</h4>
-                  <p className="mt-1 max-w-[120px] text-xs text-muted-foreground">
+                  <p className="mt-1 max-w-[140px] text-xs text-muted-foreground">
                     {step.description}
                   </p>
                 </div>
@@ -58,9 +57,19 @@ export default function PlatformSection() {
         </FadeInView>
 
         <FadeInView className="mt-12 text-center">
-          <p className="mx-auto max-w-xl text-base leading-relaxed text-muted-foreground">
-            まずは1社のDXから。そこから業界全体を変えるプラットフォームへと段階的に進化させます。
-          </p>
+          <div className="mx-auto max-w-xl rounded-2xl border border-border bg-white p-8">
+            <div className="flex items-center justify-center gap-8">
+              <div className="text-center">
+                <p className="text-xs text-muted-foreground">表</p>
+                <p className="mt-1 text-lg font-bold">レンタカー</p>
+              </div>
+              <div className="h-12 w-px bg-border" />
+              <div className="text-center">
+                <p className="text-xs text-muted-foreground">裏</p>
+                <p className="mt-1 text-lg font-bold gradient-text">レンタルOS</p>
+              </div>
+            </div>
+          </div>
         </FadeInView>
       </Container>
     </section>

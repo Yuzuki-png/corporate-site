@@ -1,28 +1,28 @@
 "use client";
 
-import { Users, Layers, Handshake } from "lucide-react";
+import { Plug, Layers, Rocket } from "lucide-react";
 import Container from "@/components/common/Container";
 import SectionHeader from "@/components/common/SectionHeader";
 import FadeInView from "@/components/common/FadeInView";
 
 const values = [
   {
-    icon: Users,
-    title: "現場ファースト",
+    icon: Plug,
+    title: "APIファースト",
     description:
-      "技術ありきではなく、現場の課題から始める。使う人の視点で設計し、本当に役立つシステムを作ります。",
+      "すべての機能をAPIとして設計。レンタカー在庫データを、誰でも簡単に活用できる形で提供します。",
   },
   {
     icon: Layers,
     title: "段階的アプローチ",
     description:
-      "一度に全てをデジタル化するのではなく、効果の高い部分から段階的に。確実に成果を出しながら進めます。",
+      "レンタカーの在庫管理DXから始め、API接続、OTA・MaaS連携へと段階的にサービスを拡大していきます。",
   },
   {
-    icon: Handshake,
-    title: "継続的な伴走",
+    icon: Rocket,
+    title: "業界を変える",
     description:
-      "導入して終わりではありません。運用・改善を継続的にサポートし、DXの定着と進化を支援します。",
+      "レンタカー業界のデジタル化にとどまらず、あらゆるレンタル在庫をつなぐプラットフォームへと進化します。",
   },
 ];
 

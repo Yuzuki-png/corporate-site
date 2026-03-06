@@ -16,25 +16,25 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: {
-    default: "Linkvia | AIとDXで、業界の在庫をつなぐ",
+    default: "Linkvia | レンタカー在庫をAPIでつなぐ",
     template: "%s | Linkvia",
   },
   description:
-    "AI導入支援、DXコンサルティング、在庫管理/予約管理SaaS開発。レンタカー・レンタル・観光業界のDXを支援するテクノロジー企業。",
+    "レンタカー在庫API。レンタカー会社の在庫管理DXと、旅行アプリ・MaaSへのリアルタイム在庫接続を提供。",
   keywords: [
-    "AI導入",
-    "DX",
     "レンタカーDX",
+    "レンタカー在庫API",
     "在庫管理",
     "予約管理",
-    "SaaS",
-    "業務効率化",
-    "レンタル管理",
+    "OTA連携",
+    "MaaS",
+    "リアルタイム在庫",
+    "AI価格最適化",
   ],
   openGraph: {
-    title: "Linkvia | AIとDXで、業界の在庫をつなぐ",
+    title: "Linkvia | レンタカー在庫をAPIでつなぐ",
     description:
-      "AI導入支援、DXコンサルティング、在庫管理/予約管理SaaS開発。レンタカー・レンタル・観光業界のDXを支援。",
+      "レンタカー在庫API。レンタカー会社・旅行アプリ・MaaSをリアルタイム在庫で接続。",
     type: "website",
     locale: "ja_JP",
   },

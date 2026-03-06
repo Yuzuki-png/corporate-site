@@ -7,7 +7,7 @@ import Container from "@/components/common/Container";
 export const metadata: Metadata = {
   title: "お問い合わせ",
   description:
-    "DXに関するご相談、お見積もり、技術的な質問など、お気軽にお問い合わせください。通常1営業日以内にご返信いたします。",
+    "レンタカー在庫のDX化やAPI接続に関するご相談、お見積もり、技術的な質問など、お気軽にお問い合わせください。",
 };
 
 export default function ContactPage() {
@@ -16,7 +16,7 @@ export default function ContactPage() {
       <PageHero
         englishTitle="Contact"
         japaneseTitle="お問い合わせ"
-        description="DXに関するご相談、お見積もり、技術的な質問など、お気軽にお問い合わせください。"
+        description="レンタカー在庫のDX化やAPI接続について、お気軽にご相談ください。"
       />
       <section className="py-24 sm:py-32">
         <Container>

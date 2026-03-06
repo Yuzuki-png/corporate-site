@@ -53,12 +53,11 @@ export default function ContactForm() {
           </label>
           <select className="w-full rounded-xl border border-border px-4 py-3 text-sm outline-none transition-colors focus:border-primary focus:ring-1 focus:ring-primary">
             <option value="">選択してください</option>
-            <option value="ai">AI導入支援</option>
-            <option value="dx">DXコンサルティング</option>
-            <option value="inventory">在庫管理システム</option>
-            <option value="reservation">予約管理システム</option>
-            <option value="saas">SaaS開発</option>
-            <option value="api">API開発・システム統合</option>
+            <option value="rental-dx">レンタカー在庫管理DX</option>
+            <option value="api">レンタカー在庫API接続</option>
+            <option value="ota">OTA連携</option>
+            <option value="maas">MaaS連携</option>
+            <option value="pricing">AI価格最適化</option>
             <option value="other">その他</option>
           </select>
         </div>

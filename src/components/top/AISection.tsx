@@ -1,28 +1,34 @@
 "use client";
 
-import { Brain, Eye, TrendingUp } from "lucide-react";
+import { Database, Globe, CalendarCheck, TrendingUp } from "lucide-react";
 import Container from "@/components/common/Container";
 import SectionHeader from "@/components/common/SectionHeader";
 import FadeInView from "@/components/common/FadeInView";
 
 const features = [
   {
-    icon: Brain,
-    title: "生成AI活用",
+    icon: Database,
+    title: "在庫管理DX",
     description:
-      "ChatGPT / Claude等の生成AIを業務フローに統合。問い合わせ対応の自動化、ドキュメント生成、データ分析を効率化します。",
+      "車両の在庫状況をリアルタイムでデジタル管理。紙やExcelからの脱却で、業務効率を大幅に向上させます。",
   },
   {
-    icon: Eye,
-    title: "画像認識・車両検査AI",
+    icon: Globe,
+    title: "OTA接続",
     description:
-      "車両の傷検出、在庫状態の自動判定など、画像認識AIで点検・検品業務を自動化します。",
+      "楽天トラベル、じゃらん等の予約サイトと在庫を自動連携。販路拡大と在庫の一元管理を同時に実現します。",
+  },
+  {
+    icon: CalendarCheck,
+    title: "予約管理",
+    description:
+      "オンライン予約から貸出・返却まで一気通貫。24時間Web予約で機会損失を防ぎます。",
   },
   {
     icon: TrendingUp,
-    title: "需要予測・最適化",
+    title: "稼働率最適化",
     description:
-      "過去データとAIで需要を予測。在庫配置の最適化、価格の動的設定で収益を最大化します。",
+      "データに基づく需要予測と価格最適化で、車両の稼働率と収益を最大化します。",
   },
 ];
 
@@ -31,13 +37,13 @@ export default function AISection() {
     <section className="py-24 sm:py-32">
       <Container>
         <SectionHeader
-          englishLabel="AI Integration"
-          title="AIを、現場の武器に"
-          highlightedText="AI"
-          description="最新のAI技術を業務に実装。生成AI、画像認識、需要予測など、御社の課題に最適なAIソリューションを提案から導入まで一貫して支援します。"
+          englishLabel="For Rental Car Companies"
+          title="レンタカー会社向け"
+          highlightedText="レンタカー会社"
+          description="在庫管理から予約・OTA連携まで、レンタカー業務のDXをワンストップで支援します。"
         />
 
-        <div className="mt-16 grid gap-6 sm:grid-cols-3">
+        <div className="mt-16 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
           {features.map((feature, i) => (
             <FadeInView key={feature.title} delay={i * 0.1}>
               <div className="group rounded-2xl border border-border p-8 transition-all hover:border-primary/30 hover:shadow-lg hover:shadow-primary/5">

@@ -13,9 +13,9 @@ interface CTASectionProps {
 }
 
 export default function CTASection({
-  title = "まずは無料相談から",
-  description = "現在の課題をお聞かせください。最適なDXの進め方を、無料でご提案します。",
-  buttonText = "無料相談を予約する",
+  title = "お問い合わせ",
+  description = "レンタカー在庫のDX化やAPI接続について、お気軽にご相談ください。",
+  buttonText = "お問い合わせする",
   buttonHref = "/contact",
 }: CTASectionProps) {
   return (

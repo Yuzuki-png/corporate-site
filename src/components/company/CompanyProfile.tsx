@@ -10,11 +10,11 @@ const profileData = [
   { label: "代表", value: "代表取締役 ○○ ○○" },
   {
     label: "事業内容",
-    value: "AI導入支援、DXコンサルティング、業務システム開発、SaaS開発",
+    value: "レンタカー在庫API、レンタカーDX支援、在庫管理システム開発",
   },
   {
     label: "対象業界",
-    value: "レンタカー、レンタル事業、観光、設備管理、車両管理",
+    value: "レンタカー、旅行・OTA、MaaS・モビリティ",
   },
 ];
 

@@ -13,12 +13,12 @@ export default function Mission() {
               Mission
             </span>
             <h2 className="mt-3 text-2xl font-bold tracking-tight sm:text-3xl lg:text-4xl">
-              テクノロジーの力で、
+              レンタカー在庫を
               <br />
-              業界の&quot;当たり前&quot;を変える
+              <span className="gradient-text">APIでつなぐ</span>
             </h2>
             <p className="mt-6 text-base leading-relaxed text-muted-foreground">
-              レンタル業界・観光業界をはじめ、在庫管理が必要な業界では、まだ多くの業務が紙やExcel、電話で行われています。私たちは、AIとDXの力で現場の業務を効率化し、さらに業界全体をつなぐプラットフォームの構築を目指しています。
+              レンタカー業界では、在庫管理や予約管理がまだ電話・FAX・Excelで行われていることが少なくありません。私たちは、レンタカーの在庫をリアルタイムでデジタル化し、APIを通じて旅行アプリやMaaSプラットフォームと接続することで、業界全体の効率化を推進します。
             </p>
           </FadeInView>
 
@@ -27,13 +27,25 @@ export default function Mission() {
               Vision
             </span>
             <h2 className="mt-3 text-2xl font-bold tracking-tight sm:text-3xl">
-              業界の在庫をつなぎ、
+              私たちはレンタカーから始まり
               <br />
-              <span className="gradient-text">新しい価値を創造する</span>
+              すべてのレンタル在庫を
+              <br />
+              <span className="gradient-text">デジタル化することを目指しています</span>
             </h2>
-            <p className="mt-6 text-base leading-relaxed text-muted-foreground">
-              個社のDXから始まり、SaaS化、在庫統合、API連携を経て、業界全体が接続されるプラットフォームの実現を目指します。
-            </p>
+            <div className="mt-8 mx-auto max-w-sm rounded-2xl border border-border p-6">
+              <div className="flex items-center justify-center gap-8">
+                <div className="text-center">
+                  <p className="text-xs text-muted-foreground">表</p>
+                  <p className="mt-1 text-xl font-bold">レンタカー</p>
+                </div>
+                <div className="h-12 w-px bg-border" />
+                <div className="text-center">
+                  <p className="text-xs text-muted-foreground">裏</p>
+                  <p className="mt-1 text-xl font-bold gradient-text">レンタルOS</p>
+                </div>
+              </div>
+            </div>
           </FadeInView>
         </div>
       </Container>

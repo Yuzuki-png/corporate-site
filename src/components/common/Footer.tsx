@@ -2,16 +2,14 @@ import Link from "next/link";
 
 const footerLinks = {
   サービス: [
-    { label: "AI導入支援", href: "/service" },
-    { label: "DXコンサルティング", href: "/service" },
-    { label: "業務システム開発", href: "/service" },
-    { label: "SaaS開発", href: "/service" },
+    { label: "レンタカー会社向け", href: "/service" },
+    { label: "接続先・パートナー向け", href: "/service" },
+    { label: "レンタカー在庫API", href: "/service" },
   ],
-  ソリューション: [
-    { label: "レンタカーDX", href: "/solutions" },
-    { label: "レンタルDX", href: "/solutions" },
-    { label: "観光DX", href: "/solutions" },
-    { label: "設備管理DX", href: "/solutions" },
+  プロダクト: [
+    { label: "在庫管理DX", href: "/solutions" },
+    { label: "OTA接続", href: "/solutions" },
+    { label: "MaaS連携", href: "/solutions" },
   ],
   企業情報: [
     { label: "会社概要", href: "/company" },
@@ -35,7 +33,7 @@ export default function Footer() {
               </span>
             </Link>
             <p className="mt-4 max-w-xs text-sm leading-relaxed text-muted-foreground">
-              AIとDXで、業界の在庫をつなぐ。レンタル・観光・車両管理業界のデジタル変革を支援します。
+              レンタカー在庫をAPIでつなぐ。レンタカー会社・旅行アプリ・MaaSをリアルタイム在庫で接続します。
             </p>
           </div>
 

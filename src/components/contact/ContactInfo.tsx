@@ -8,7 +8,7 @@ export default function ContactInfo() {
     <FadeInView direction="left">
       <h3 className="text-xl font-bold">お気軽にご連絡ください</h3>
       <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
-        通常1営業日以内にご返信いたします。オンライン面談も対応可能です。
+        レンタカー在庫のDX化やAPI接続について、お気軽にご相談ください。通常1営業日以内にご返信いたします。
       </p>
 
       <div className="mt-8 space-y-6">
